@@ -59,7 +59,7 @@ module FakeS3
       # Here lies hard-coded defaults for CORS Configuration
       @cors_allow_origin = (cors_options['allow_origin'] or '*')
       @cors_allow_methods = (cors_options['allow_methods'] or 'PUT, POST, HEAD, GET, OPTIONS')
-      @cors_preflight_allow_headers = (cors_options['preflight_allow_headers'] or 'Accept, Content-Type, Authorization, Content-Length, ETag, X-CSRF-Token, Content-Disposition')
+      @cors_preflight_allow_headers = (cors_options['preflight_allow_headers'] or 'Accept, Content-Type, Authorization, Content-Length, ETag, X-CSRF-Token, Content-Disposition, Content-Encoding')
       @cors_post_put_allow_headers = (cors_options['post_put_allow_headers'] or 'Authorization, Content-Length')
       @cors_expose_headers = (cors_options['expose_headers'] or 'ETag')
     end
